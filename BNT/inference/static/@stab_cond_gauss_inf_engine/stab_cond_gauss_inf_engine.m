@@ -24,7 +24,7 @@ partial_order = determine_elim_constraints(bnet, onodes);
 strong = ~isempty(partial_order);
 stages = {};
 clusters = {};
-[engine.jtree, dummy_root, engine.cliques, B, w, elim_order] = 
+[engine.jtree, dummy_root, engine.cliques, B, w, elim_order] = ...
     graph_to_jtree(moralize(bnet.dag), ns, partial_order, stages, clusters);
 
     
